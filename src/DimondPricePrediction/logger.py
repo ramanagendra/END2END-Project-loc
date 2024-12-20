@@ -15,3 +15,5 @@ logging.basicConfig(level=logging.INFO,
                     filename=LOG_FILEPATH,
                     format="[%(asctime)s %(lineno)d %(time)s - %(levelname)s - %(message)s]"
 )
+if __name__ == '__main__':
+    logging.info("here again i am testing")
