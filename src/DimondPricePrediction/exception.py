@@ -3,7 +3,7 @@ import sys
 class customexception(Exception):
     def __init__(self, error_message,error_details:sys):
         self.error_messsage = error_message
-        exc_tb = error_details.exc_info()
+        __, ___, exc_tb = error_details.exc_info()
     
         self.lineno=exc_tb.tb_lineno
         self.file_name=exc_tb.tb_frame.f_code.co_filename
